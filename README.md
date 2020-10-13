@@ -18,11 +18,14 @@ Inside the json file, there is a "check_cmd" key, which contains the terminal co
 
 # EnvironmentChecker (PT-BR)
 
-Para que serve:
+
+
+### Para que serve:
 
 O script EnvironmentChecker fornece um relatório em forma de tabela no terminal do computador, para uma verificação das ferramentas necessárias para que você mantenha um ambiente de desenvolvimento igual entre diversas máquinas, e também para validar se os programas necessários para a execução de um projeto estão disponíveis localmente e com as versões corretas.
 
-Como funciona:
+
+### Como funciona:
 
 O arquivo requirements.json contém uma lista de programas definidos pelo usuário, e dentro de cada nicho está o nome do programa e a versão do programa que o usuário espera ter instalado em sua máquina. Essa lista pode ser compartilhada por diferentes membros de um time, mesmo que cada membro necessite de programas diferentes e versões de programas diferentes, pois a opção "required" do arquivo json informa se a instalação daquele programa deve ser verifica ou não. Se estiver como true, o script irá verificar a instalação, se estiver como false, não irá.
 Dessa forma, uma mesma lista pode ser compartilhada sem a necessidade de remover nenhum item,  apenas mudando os valores de true e false na chave required.
