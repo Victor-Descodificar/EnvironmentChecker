@@ -1,4 +1,4 @@
-# This script checks the main programs to run mobileautomation framework in a macos computer.
+# This script checks if the required programs are avaiable in the machine.
 
 import json
 import os
