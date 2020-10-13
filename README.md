@@ -13,19 +13,6 @@ How does the script scan different programs?
 
 Inside the json file, there is a "check_cmd" key, which contains the terminal command that will be used to check whether the program is installed or not. This command is provided by the user, and changes according to the type of program. But once the user knows what command is needed to verify its installation, just write it in the key "check_cmd", and the script will read that command and execute it, checking if the program is installed and which version is installed.
 
-# Output format
-
-
-+-------------------+--------------------+--------------------+-------------------+-------------------------------------------------+------------+
-| Required programs |  Required version  | Installed programs | Installed version |                      Error                      | Validation |
-+-------------------+--------------------+--------------------+-------------------+-------------------------------------------------+------------+
-|      homebrew     | ['2.5.4', '2.5.6'] |      homebrew      |     ['2.5.4']     |                       None                      |   FAILED   |
-|       python      |     ['2.7.16']     |       python       |     ['2.7.16']    |                       None                      |   PASSED   |
-|        java       |   ['1.8.0_232']    |        java        |   ['1.8.0_232']   |                       None                      |   PASSED   |
-|        wget       |     ['1.20.3']     |        wget        |     ['1.20.3']    |                       None                      |   PASSED   |
-|     prometheus    |       ['1']        |       Unkown       |         []        | Error running the command: prometheus --version |   FAILED   |
-+-------------------+--------------------+--------------------+-------------------+-------------------------------------------------+------------+
-
 
 
 # EnvironmentChecker (PT-BR)
@@ -42,16 +29,3 @@ Dessa forma, uma mesma lista pode ser compartilhada sem a necessidade de remover
 Como o script consegue fazer a varredura de diferentes programas?
 
 Dentro do arquivo json, tem uma chave "check_cmd", que contém o comando de terminal que será usado para verificar se o programa está instalado ou não. Esse comando é fornecido pelo usuário, e muda de acordo com o tipo de programa. Mas uma vez que o usuário sabe qual é o comando necessário para verificar sua instalação, basta escreve-lo na chave "check_cmd", e o script irá ler esse comando e executar, verificando se o programa está instalado e qual é a versão instalada.
-
-
-# Formato de saída
-
-+-------------------+--------------------+--------------------+-------------------+-------------------------------------------------+------------+
-| Required programs |  Required version  | Installed programs | Installed version |                      Error                      | Validation |
-+-------------------+--------------------+--------------------+-------------------+-------------------------------------------------+------------+
-|      homebrew     | ['2.5.4', '2.5.6'] |      homebrew      |     ['2.5.4']     |                       None                      |   FAILED   |
-|       python      |     ['2.7.16']     |       python       |     ['2.7.16']    |                       None                      |   PASSED   |
-|        java       |   ['1.8.0_232']    |        java        |   ['1.8.0_232']   |                       None                      |   PASSED   |
-|        wget       |     ['1.20.3']     |        wget        |     ['1.20.3']    |                       None                      |   PASSED   |
-|     prometheus    |       ['1']        |       Unkown       |         []        | Error running the command: prometheus --version |   FAILED   |
-+-------------------+--------------------+--------------------+-------------------+-------------------------------------------------+------------+
