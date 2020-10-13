@@ -1,6 +1,7 @@
 # EnvironmentChecker
 
-What is it for:
+
+## What is it for:
 
 The EnvironmentChecker script provides a tabular report on the computer's terminal, to check the tools necessary for you to maintain an equal development environment between different machines, and also to validate whether the necessary programs for the execution of a project are available locally and with the correct versions.
 
