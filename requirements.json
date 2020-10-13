@@ -1,0 +1,52 @@
+{
+    "required_softwares": {
+        "software_1": {
+            "name": "homebrew",
+            "required": "true",
+            "version":  ["2.5.4","2.5.6"],
+            "check_cmd": "brew --version"
+        },
+        "software_2": {
+            "name": "python",
+            "required": "true",
+            "version":  ["2.7.16"],
+            "check_cmd": "python --version"
+        },
+        "software_3": {
+            "name": "java",
+            "required": "true",
+            "version":  ["1.8.0_232"],
+            "check_cmd": "java -version"
+        },
+        "software_4": {
+            "name": "wget",
+            "required": "true",
+            "version":  ["1.20.3"],
+            "check_cmd": "wget -V"
+        },
+        "software_5": {
+            "name": "prometheus",
+            "required": "true",
+            "version":  ["1"],
+            "check_cmd": "prometheus --version"
+        },
+        "software_6": {
+            "name": "mobileautomation",
+            "required": "true",
+            "version":  ["1"],
+            "check_cmd": ""
+        },
+        "software_7": {
+            "name": "android",
+            "required": "true",
+            "version":  ["1"],
+            "check_cmd": ""
+        },
+        "software_8": {
+            "name": "xcode",
+            "required": "true",
+            "version":  ["1"],
+            "check_cmd": ""
+        }
+    }
+}
